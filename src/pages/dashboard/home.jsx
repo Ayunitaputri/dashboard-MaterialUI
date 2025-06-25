@@ -192,7 +192,11 @@ export function Home() {
                           color="blue"
                           disabled={loading}
                         >
-                          {loading ? <Spinner className="h-12 w-12" /> : "Edit"}
+                          {loading ? (
+                            <Spinner className="h-12 w-12" />
+                          ) : (
+                            "Update"
+                          )}
                         </Button>
                       </td>
 
